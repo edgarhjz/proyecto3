@@ -40,7 +40,35 @@ namespace proyecto3
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            bool fin = false;
+            Biblioteca biblioteca = new Biblioteca();
+            int opcion = 0;
+
+            while(!fin) {
+                MostrarMenu();
+                opcion = Convert.ToInt32(Console.ReadLine());
+                switch(opcion) {
+                    case 1:
+                    AgregarLibroALaBiblioteca(biblioteca);
+                    break;
+
+                    case 2:
+                    biblioteca.Mostrar();
+                    break;
+
+                    case 3:
+                    BorrarLibroDeLaBiblioteca(biblioteca);
+                    break;
+
+                    case 4:
+                    Console.WriteLine("Número de libros en la biblioteca: " + biblioteca.NumeroLibros());
+                    break;
+
+                    case 5:
+                    fin = true;
+                    break;                                     
+                }
+            }
         }
     }
 }
