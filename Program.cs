@@ -69,6 +69,9 @@ namespace proyecto3
                     break;                                     
                 }
             }
+
+            Console.WriteLine("******* Fin del programa *******");
+            Console.ReadKey();
         }
     }
 }
