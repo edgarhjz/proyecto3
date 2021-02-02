@@ -5,10 +5,11 @@ namespace proyecto3
     class Program
     {
         static void MostrarMenu() {
+            Console.WriteLine();
             Console.WriteLine("* Menú *");
             Console.WriteLine("1. Agregar libro a la biblioteca");
             Console.WriteLine("2. Mostrar biblioteca");
-            Console.WriteLine("3. Borar libro");
+            Console.WriteLine("3. Borrar libro");
             Console.WriteLine("4. ¿Número de libros?");
             Console.WriteLine("5. Salir");
             Console.Write("Opción: ");
